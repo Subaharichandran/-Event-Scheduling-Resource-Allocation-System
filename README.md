@@ -24,7 +24,6 @@ The application ensures that no resource is double-booked by validating time ove
 - Flask (Web Framework)
 - SQLite (Database)
 - HTML & CSS (Frontend)
-- Jinja2 (Templating Engine)
 
 ---
 
