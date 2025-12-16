@@ -147,15 +147,6 @@ A screen-recorded demo video showing the working of the application is included 
 
 ---
 
-## 🚀 Future Enhancements
-
-- User authentication and roles
-- Calendar-based event view
-- Email notifications for conflicts
-- Export reports to PDF/Excel
-
----
-
 ## 👤 Author
 
 Name: Suba Harichandran
