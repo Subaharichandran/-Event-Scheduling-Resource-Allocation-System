@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h3><i class="fa fa-chart-bar"></i> Resource Utilisation Report</h3>
+
+<div class="row">
+  {% for r in data %}
+  <div class="col-md-4">
+    <div class="card p-3 mb-3">
+      <h5>{{ r.name }}</h5>
+      <p>Type: {{ r.type }}</p>
+      <h6>Total Hours: {{ r.hours }}</h6>
+      <p>Upcoming: {{ r.upcoming|length }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

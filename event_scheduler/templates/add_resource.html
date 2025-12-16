@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h3 class="mb-3">
+  <i class="fa fa-building"></i> Add Resource
+</h3>
+
+<div class="card p-4 col-md-6">
+
+  <form method="post">
+    <label class="mb-1">Resource Name</label>
+    <input
+      type="text"
+      name="name"
+      class="form-control mb-3"
+      placeholder="Eg: Room A, Projector"
+      required
+    >
+
+    <label class="mb-1">Resource Type</label>
+    <input
+      type="text"
+      name="type"
+      class="form-control mb-3"
+      placeholder="Eg: Hall, Equipment"
+      required
+    >
+
+    <button class="btn btn-primary w-100">
+      <i class="fa fa-plus"></i> Add Resource
+    </button>
+  </form>
+
+</div>
+
+{% endblock %}

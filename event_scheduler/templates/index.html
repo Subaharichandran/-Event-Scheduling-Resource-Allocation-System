@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h3 class="mb-4">Dashboard</h3>
+
+<div class="row g-4">
+  <div class="col-md-4">
+    <div class="card p-4 text-center">
+      <h5 class="mb-2">📅 Events</h5>
+      <p class="text-muted">Create & manage events</p>
+      <a href="/events" class="btn btn-primary w-100">Manage Events</a>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card p-4 text-center">
+      <h5 class="mb-2">🏢 Resources</h5>
+      <p class="text-muted">Rooms, instructors, equipment</p>
+      <a href="/resources" class="btn btn-success w-100">Manage Resources</a>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card p-4 text-center">
+      <h5 class="mb-2">🔗 Allocation</h5>
+      <p class="text-muted">Assign & detect conflicts</p>
+      <a href="/allocate" class="btn btn-warning w-100">Allocate Resources</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

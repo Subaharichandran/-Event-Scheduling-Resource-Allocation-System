@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Edit Event</h3>
+<form method="post">
+<input class="form-control mb-2" name="title" value="{{event.title}}">
+<input type="datetime-local" class="form-control mb-2"
+ value="{{event.start_time|replace(' ', 'T')}}">
+<input type="datetime-local" class="form-control mb-2"
+ value="{{event.end_time|replace(' ', 'T')}}">
+<input class="form-control mb-2" name="desc" value="{{event.description}}">
+<button class="btn btn-primary">Update</button>
+</form>
+{% endblock %}

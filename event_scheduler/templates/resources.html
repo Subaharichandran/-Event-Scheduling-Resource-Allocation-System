@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="d-flex justify-content-between mb-3">
+  <h3><i class="fa fa-building"></i> Resources</h3>
+  <a href="/add_resource" class="btn btn-primary">
+    <i class="fa fa-plus"></i> Add Resource
+  </a>
+</div>
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for r in resources %}
+    <tr>
+      <td>{{ r.name }}</td>
+      <td>{{ r.type }}</td>
+      <td>
+        <a href="/edit_resource/{{ r.id }}" class="btn btn-sm btn-warning">
+  <i class="fa fa-edit"></i> Edit
+</a>
+        <a href="/delete_resource/{{r.id}}" class="btn btn-sm btn-danger">Delete</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}

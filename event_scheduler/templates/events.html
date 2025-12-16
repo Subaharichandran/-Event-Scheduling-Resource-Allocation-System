@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="d-flex justify-content-between mb-3">
+  <h3><i class="fa fa-calendar"></i> Events</h3>
+  <a href="/add_event" class="btn btn-primary">
+    <i class="fa fa-plus"></i> Add Event
+  </a>
+</div>
+
+<div class="row">
+  {% for e in events %}
+  <div class="col-md-4">
+    <div class="card p-3 mb-3">
+      <h5>{{ e.title }}</h5>
+      <p class="text-muted">{{ e.description }}</p>
+      <p>
+        <i class="fa fa-clock"></i>
+        {{ e.start_time }} → {{ e.end_time }}
+      </p>
+      <a href="/edit_event/{{e.id}}" class="btn btn-sm btn-primary">Edit</a>
+      <a href="/delete_event/{{e.id}}" class="btn btn-sm btn-danger">Delete</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

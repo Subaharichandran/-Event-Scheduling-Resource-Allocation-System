@@ -1,0 +1,53 @@
+/* App background */
+.bg-app {
+    background-color: #f4f6f9;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1f3c88;
+}
+
+/* Cards */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: none;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #1f3c88;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #162e6b;
+}
+
+.btn-warning {
+    background-color: #f4b400;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+/* Tables */
+.table thead {
+    background-color: #1f3c88;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: #eef3ff;
+}
+
+/* Forms */
+.form-control {
+    border-radius: 6px;
+}
